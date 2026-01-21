@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>React Basics</title>
+  </head>
+  <body>
+    <div class="js-container"></div>
+
+   
+    <script src="https://unpkg.com/supersimpledev/react.js"></script>
+    <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
+
+    <script src="https://unpkg.com/supersimpledev/babel.js"></script>
+    <script type="text/babel">
+      const button = <button>Click Me!</button>;
+      const paragraph  = <p>This is a paragraph.</p>;
+
+      //displaying multiple elements together
+      const div = (//this bracket is for code cleanup;separating js and html
+         <div>
+          <button>Click Me!</button>
+           <p>This is a paragraph in the {1+1}nd line.My name is Jahnavi S!</p>
+        </div>
+      );
+      
+      
+      const container = document.querySelector('.js-container');
+      ReactDOM.createRoot(container).render(div);
+    </script>
+  </body>
+</html>
