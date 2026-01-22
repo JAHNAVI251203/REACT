@@ -14,10 +14,5 @@ A simple chatbot UI built using React and JavaScript.
 - JavaScript
 - React
 
-## How to Run
-1. Open index.html in browser  
-OR  
-2. Use Live Server in VS Code
-
 ## Author
 Jahnavi
