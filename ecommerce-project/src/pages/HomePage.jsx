@@ -6,12 +6,12 @@ import './HomePage.css';
 
 export function HomePage({ cart }) {
   const [products, setProducts] = useState([]);
-  
+
   useEffect(() => {
     axios.get('/api/products')
       .then((response) => {
         setProducts(response.data);
-      });  
+      });
   }, []);
 
   /*fetch('http://localhost:3000/api/products')
@@ -21,11 +21,11 @@ export function HomePage({ cart }) {
         console.log(data);  
      });*/
 
-  
+
   return (
     <>
       <title>E-commerce Project</title>
-      
+
       <Header cart={cart} />
 
       <div className="home-page">

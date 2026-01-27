@@ -40,6 +40,5 @@ export function Header({ cart }) {
           </Link>
         </div>
       </div>
-
   );
 }
