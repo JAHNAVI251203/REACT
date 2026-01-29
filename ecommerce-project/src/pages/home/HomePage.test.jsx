@@ -56,7 +56,7 @@ describe('HomePage component', () => {
     expect(
       within(productContainers[0])
         .getByText('Black and Gray Athletic Cotton Socks - 6 Pairs')
-    ).toBeInTheDocument();
+     ).toBeInTheDocument();
 
     expect(
       within(productContainers[1])
